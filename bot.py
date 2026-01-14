@@ -1,9 +1,8 @@
+import os
 import telebot
 
-# ================= CONFIGURAÇÕES =================
-
-TOKEN = "8584614253:AAHtzkk0VoxqwzoBjh4ByROecLrAxLpv0wI"
-GRUPO_ATENDIMENTO_ID = -1003559304382  # ID do grupo privado
+TOKEN = os.getenv("TOKEN")
+GRUPO_ATENDIMENTO_ID = int(os.getenv("GRUPO_ATENDIMENTO_ID"))
 
 bot = telebot.TeleBot(TOKEN)
 
